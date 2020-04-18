@@ -4,10 +4,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import csv
 
-#Use selenium to scrape the robertparker.com vintages table
+# Use selenium to scrape the robertparker.com vintages table into a temp file
+# This file will be parsed into the main csv file later
 
 # Open a csv file to store the output
-csv_file = open('robertparker_temp.csv', 'w', encoding='utf-8', newline='')
+csv_file = open('robertparker_raw.csv', 'w', encoding='utf-8', newline='')
 writer = csv.writer(csv_file)
 writer.writerow(['href', 'rating'])
 

@@ -1,0 +1,92 @@
+name,origin,price,rating,type,varietal
+Laurent-Perrier Cuvee Rose,"Champagne, France",79.99,Connoisseurs' Guide 96 point rating,Sparkling & Champagne,Rosé Sparkling Wine
+Laurent-Perrier Cuvee Rose,"Champagne, France",79.99,Tasting Panel 93 point rating,Sparkling & Champagne,Rosé Sparkling Wine
+Laurent-Perrier Cuvee Rose,"Champagne, France",79.99,Wine Spectator 93 point rating,Sparkling & Champagne,Rosé Sparkling Wine
+Laurent-Perrier Cuvee Rose,"Champagne, France",79.99,Wine & Spirits 92 point rating,Sparkling & Champagne,Rosé Sparkling Wine
+Laurent-Perrier Cuvee Rose,"Champagne, France",79.99,James Suckling 92 point rating,Sparkling & Champagne,Rosé Sparkling Wine
+Laurent-Perrier Cuvee Rose,"Champagne, France",79.99,Wine Enthusiast 91 point rating,Sparkling & Champagne,Rosé Sparkling Wine
+Stags' Leap Winery Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",49.99,Robert Parker's Wine Advocate 94 point rating,Red Wine,Cabernet Sauvignon
+Stags' Leap Winery Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",49.99,James Suckling 93 point rating,Red Wine,Cabernet Sauvignon
+Stags' Leap Winery Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",49.99,Tasting Panel 92 point rating,Red Wine,Cabernet Sauvignon
+Stags' Leap Winery Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",49.99,Jeb Dunnuck 91 point rating,Red Wine,Cabernet Sauvignon
+Stags' Leap Winery Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",49.99,Wine & Spirits 90 point rating,Red Wine,Cabernet Sauvignon
+Tenuta di Nozzole Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",22.99,James Suckling 94 point rating,Red Wine,Sangiovese
+Tenuta di Nozzole Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",22.99,Robert Parker's Wine Advocate 92 point rating,Red Wine,Sangiovese
+Tenuta di Nozzole Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",22.99,Wine Spectator 92 point rating,Red Wine,Sangiovese
+Mazzei Chianti Classico Riserva Ser Lapo 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,Decanter 97 point rating,Red Wine,Sangiovese
+Mazzei Chianti Classico Riserva Ser Lapo 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,James Suckling 95 point rating,Red Wine,Sangiovese
+Mazzei Chianti Classico Riserva Ser Lapo 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,Wine Spectator 94 point rating,Red Wine,Sangiovese
+Mazzei Chianti Classico Riserva Ser Lapo 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,Robert Parker's Wine Advocate 92 point rating,Red Wine,Sangiovese
+Mazzei Chianti Classico Riserva Ser Lapo 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,Wine & Spirits 91 point rating,Red Wine,Sangiovese
+Martin Ray Sonoma Coast Pinot Noir 2018,"Sonoma Coast, Sonoma County, California",19.99,James Suckling 94 point rating,Red Wine,Pinot Noir
+Raymond Reserve Selection Cabernet Sauvignon 2017,"Napa Valley, California",39.99,James Suckling 97 point rating,Red Wine,Cabernet Sauvignon
+Raymond Reserve Selection Cabernet Sauvignon 2017,"Napa Valley, California",39.99,Robert Parker's Wine Advocate 92 point rating,Red Wine,Cabernet Sauvignon
+Raymond Reserve Selection Cabernet Sauvignon 2017,"Napa Valley, California",39.99,Wilfred Wong of Wine.com 92 point rating,Red Wine,Cabernet Sauvignon
+Raymond Reserve Selection Cabernet Sauvignon 2017,"Napa Valley, California",39.99,Jeb Dunnuck 90 point rating,Red Wine,Cabernet Sauvignon
+Raymond Reserve Selection Cabernet Sauvignon 2017,"Napa Valley, California",39.99,Wine Enthusiast 90 point rating,Red Wine,Cabernet Sauvignon
+Stag's Leap Wine Cellars Artemis Cabernet Sauvignon 2017,"Napa Valley, California",69.99,Wilfred Wong of Wine.com 94 point rating,Red Wine,Cabernet Sauvignon
+Stag's Leap Wine Cellars Artemis Cabernet Sauvignon 2017,"Napa Valley, California",69.99,Wine Enthusiast 92 point rating,Red Wine,Cabernet Sauvignon
+Flowers Sonoma Coast Pinot Noir 2017,"Sonoma Coast, Sonoma County, California",49.99,James Suckling 94 point rating,Red Wine,Pinot Noir
+Flowers Sonoma Coast Pinot Noir 2017,"Sonoma Coast, Sonoma County, California",49.99,Wine Spectator 92 point rating,Red Wine,Pinot Noir
+Flowers Sonoma Coast Pinot Noir 2017,"Sonoma Coast, Sonoma County, California",49.99,Robert Parker's Wine Advocate 90 point rating,Red Wine,Pinot Noir
+Nino Franco Rustico Prosecco Superiore,"Valdobbiadene, Prosecco, Italy",19.99,Wine Enthusiast 94 point rating,Sparkling & Champagne,Non-Vintage Sparkling Wine
+Nino Franco Rustico Prosecco Superiore,"Valdobbiadene, Prosecco, Italy",19.99,James Suckling 92 point rating,Sparkling & Champagne,Non-Vintage Sparkling Wine
+Nino Franco Rustico Prosecco Superiore,"Valdobbiadene, Prosecco, Italy",19.99,Wilfred Wong of Wine.com 91 point rating,Sparkling & Champagne,Non-Vintage Sparkling Wine
+Nino Franco Rustico Prosecco Superiore,"Valdobbiadene, Prosecco, Italy",19.99,Wine & Spirits 90 point rating,Sparkling & Champagne,Non-Vintage Sparkling Wine
+Pewsey Vale Eden Valley Riesling 2018,"Eden Valley, Barossa, South Australia, Australia",16.99,James Suckling 94 point rating,White Wine,Riesling
+Pewsey Vale Eden Valley Riesling 2018,"Eden Valley, Barossa, South Australia, Australia",16.99,Wine Enthusiast 92 point rating,White Wine,Riesling
+Pewsey Vale Eden Valley Riesling 2018,"Eden Valley, Barossa, South Australia, Australia",16.99,Wilfred Wong of Wine.com 92 point rating,White Wine,Riesling
+Produttori del Barbaresco Barbaresco 2016,"Barbaresco, Piedmont, Italy",43.99,Robert Parker's Wine Advocate 95 point rating,Red Wine,Nebbiolo
+Produttori del Barbaresco Barbaresco 2016,"Barbaresco, Piedmont, Italy",43.99,Wine Enthusiast 95 point rating,Red Wine,Nebbiolo
+Produttori del Barbaresco Barbaresco 2016,"Barbaresco, Piedmont, Italy",43.99,Wine & Spirits 95 point rating,Red Wine,Nebbiolo
+Produttori del Barbaresco Barbaresco 2016,"Barbaresco, Piedmont, Italy",43.99,Vinous 94 point rating,Red Wine,Nebbiolo
+Produttori del Barbaresco Barbaresco 2016,"Barbaresco, Piedmont, Italy",43.99,Wine Spectator 93 point rating,Red Wine,Nebbiolo
+Louis Martini Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",39.99,Wine Enthusiast 94 point rating,Red Wine,Cabernet Sauvignon
+Louis Martini Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",39.99,James Suckling 93 point rating,Red Wine,Cabernet Sauvignon
+Louis Martini Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",39.99,Robert Parker's Wine Advocate 92 point rating,Red Wine,Cabernet Sauvignon
+Hall Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",59.99,Jeb Dunnuck 94 point rating,Red Wine,Cabernet Sauvignon
+Hall Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",59.99,Wilfred Wong of Wine.com 93 point rating,Red Wine,Cabernet Sauvignon
+Hall Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",59.99,Robert Parker's Wine Advocate 92 point rating,Red Wine,Cabernet Sauvignon
+Hall Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",59.99,Wine Enthusiast 90 point rating,Red Wine,Cabernet Sauvignon
+Viticcio Chianti Classico Riserva 2015,"Chianti Classico, Chianti, Tuscany, Italy",28.99,Wine Spectator 95 point rating,Red Wine,Sangiovese
+Viticcio Chianti Classico Riserva 2015,"Chianti Classico, Chianti, Tuscany, Italy",28.99,James Suckling 92 point rating,Red Wine,Sangiovese
+La Rioja Alta Vina Ardanza Reserva Seleccion Especial 2010,"Rioja, Spain",32.99,James Suckling 96 point rating,Red Wine,Tempranillo
+La Rioja Alta Vina Ardanza Reserva Seleccion Especial 2010,"Rioja, Spain",32.99,Tim Atkin 95 point rating,Red Wine,Tempranillo
+La Rioja Alta Vina Ardanza Reserva Seleccion Especial 2010,"Rioja, Spain",32.99,Robert Parker's Wine Advocate 95 point rating,Red Wine,Tempranillo
+La Rioja Alta Vina Ardanza Reserva Seleccion Especial 2010,"Rioja, Spain",32.99,Wine Spectator 94 point rating,Red Wine,Tempranillo
+La Rioja Alta Vina Ardanza Reserva Seleccion Especial 2010,"Rioja, Spain",32.99,Decanter 91 point rating,Red Wine,Tempranillo
+Buena Vista Chateau Buena Vista Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",39.99,James Suckling 95 point rating,Red Wine,Cabernet Sauvignon
+Buena Vista Chateau Buena Vista Napa Valley Cabernet Sauvignon 2016,"Napa Valley, California",39.99,Wilfred Wong of Wine.com 92 point rating,Red Wine,Cabernet Sauvignon
+Argiano Brunello di Montalcino 2015,"Montalcino, Tuscany, Italy",54.99,James Suckling 95 point rating,Red Wine,Sangiovese
+Argiano Brunello di Montalcino 2015,"Montalcino, Tuscany, Italy",54.99,Robert Parker's Wine Advocate 95 point rating,Red Wine,Sangiovese
+Argiano Brunello di Montalcino 2015,"Montalcino, Tuscany, Italy",54.99,Wine Spectator 93 point rating,Red Wine,Sangiovese
+Argiano Brunello di Montalcino 2015,"Montalcino, Tuscany, Italy",54.99,Decanter 90 point rating,Red Wine,Sangiovese
+Chateau Castera 2015,"Medoc, Bordeaux, France",29.99,Decanter 97 point rating,Red Wine,Bordeaux Red Blends
+Chateau Castera 2015,"Medoc, Bordeaux, France",29.99,Wilfred Wong of Wine.com 92 point rating,Red Wine,Bordeaux Red Blends
+Torbreck Woodcutters Shiraz 2018,"Barossa Valley, Barossa, South Australia, Australia",23.99,James Suckling 94 point rating,Red Wine,Syrah/Shiraz
+Torbreck Woodcutters Shiraz 2018,"Barossa Valley, Barossa, South Australia, Australia",23.99,Robert Parker's Wine Advocate 91 point rating,Red Wine,Syrah/Shiraz
+Grgich Hills Estate Chardonnay 2016,"Napa Valley, California",39.99,Decanter 97 point rating,White Wine,Chardonnay
+Grgich Hills Estate Chardonnay 2016,"Napa Valley, California",39.99,Wine Enthusiast 93 point rating,White Wine,Chardonnay
+Grgich Hills Estate Chardonnay 2016,"Napa Valley, California",39.99,James Suckling 92 point rating,White Wine,Chardonnay
+Grgich Hills Estate Chardonnay 2016,"Napa Valley, California",39.99,Robert Parker's Wine Advocate 92 point rating,White Wine,Chardonnay
+Il Molino di Grace Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,Wine Spectator 95 point rating,Red Wine,Sangiovese
+Il Molino di Grace Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,Decanter 93 point rating,Red Wine,Sangiovese
+Il Molino di Grace Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,Vinous 93 point rating,Red Wine,Sangiovese
+Il Molino di Grace Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",29.99,James Suckling 92 point rating,Red Wine,Sangiovese
+El Coto Coto de Imaz Gran Reserva 2012,"Rioja, Spain",32.99,Decanter 97 point rating,Red Wine,Tempranillo
+El Coto Coto de Imaz Gran Reserva 2012,"Rioja, Spain",32.99,Wine Enthusiast 94 point rating,Red Wine,Tempranillo
+El Coto Coto de Imaz Gran Reserva 2012,"Rioja, Spain",32.99,Wine Spectator 91 point rating,Red Wine,Tempranillo
+El Coto Coto de Imaz Gran Reserva 2012,"Rioja, Spain",32.99,James Suckling 91 point rating,Red Wine,Tempranillo
+Bodegas Muga Reserva 2015,"Rioja, Spain",27.99,James Suckling 94 point rating,Red Wine,Tempranillo
+Bodegas Muga Reserva 2015,"Rioja, Spain",27.99,Wine Spectator 94 point rating,Red Wine,Tempranillo
+Bodegas Muga Reserva 2015,"Rioja, Spain",27.99,Jeb Dunnuck 94 point rating,Red Wine,Tempranillo
+Bodegas Muga Reserva 2015,"Rioja, Spain",27.99,Tim Atkin 93 point rating,Red Wine,Tempranillo
+Bodegas Muga Reserva 2015,"Rioja, Spain",27.99,Robert Parker's Wine Advocate 92 point rating,Red Wine,Tempranillo
+Jordan Cabernet Sauvignon 2015,"Alexander Valley, Sonoma County, California",64.99,Wilfred Wong of Wine.com 94 point rating,Red Wine,Cabernet Sauvignon
+Jordan Cabernet Sauvignon 2015,"Alexander Valley, Sonoma County, California",64.99,Wine Enthusiast 92 point rating,Red Wine,Cabernet Sauvignon
+Jordan Cabernet Sauvignon 2015,"Alexander Valley, Sonoma County, California",64.99,Decanter 91 point rating,Red Wine,Cabernet Sauvignon
+Castello di Monsanto Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",26.99,James Suckling 94 point rating,Red Wine,Sangiovese
+Castello di Monsanto Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",26.99,Wine Spectator 94 point rating,Red Wine,Sangiovese
+Castello di Monsanto Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",26.99,Robert Parker's Wine Advocate 93 point rating,Red Wine,Sangiovese
+Castello di Monsanto Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",26.99,Wine & Spirits 93 point rating,Red Wine,Sangiovese
+Castello di Monsanto Chianti Classico Riserva 2016,"Chianti Classico, Chianti, Tuscany, Italy",26.99,Decanter 91 point rating,Red Wine,Sangiovese
