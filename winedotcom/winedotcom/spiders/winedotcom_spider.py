@@ -5,15 +5,14 @@ from winedotcom.items import WinedotcomItem
 class WinedotcomSpider(Spider):
     name = 'winedotcom_spider'
     allowed_domains = ['www.wine.com']
-    start_urls = ['https://www.wine.com/list/wine/7155?pricemax=80&ratingmin=94']
-    # next is 'https://www.wine.com/list/wine/7155/2?pricemax=80&ratingmin=94'
-    # we appear to have 25 results per page
+    start_urls = ['https://www.wine.com/list/wine/7155']
+     # we appear to have 25 results per page
 
     def parse(self, response):
         # Find the total number of results
-        n = int(response.xpath('//span[@class="count"]/text()').extract_first())
+        n = int(response.xpath('//span[@class="count"]/text()').extract_first().replace(',', ''))
         number_pages = n // 25 + 1
-        result_urls = ['https://www.wine.com/list/wine/7155/{}?pricemax=80&ratingmin=94'.format(x) for x in range(1, number_pages + 1)]
+        result_urls = ['https://www.wine.com/list/wine/7155/{}'.format(x) for x in range(1, number_pages + 1)]
         for url in result_urls:
             yield Request(url=url, callback=self.parse_result_page)
 
