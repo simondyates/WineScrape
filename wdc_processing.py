@@ -84,6 +84,20 @@ def extract_rating(s):
 scrape_df['rater'] = scrape_df['rating'].apply(extract_rater)
 scrape_df['rating'] = scrape_df['rating'].apply(extract_rating)
 
+# Now I want to shorten some of the longer rating names
+short_dict = {'Robert Parker\'s Wine Advocate': 'Robert Parker',
+              'Wilfred Wong of Wine.com': 'wine.com',
+              'Connoisseurs\' Guide': 'Conn Guide',
+              'International Wine Cellar': 'IWC'}
+
+def shorten(s):
+    try:
+        return short_dict[s]
+    except:
+        return s
+
+scrape_df['rater'] = scrape_df['rater'].apply(shorten)
+
 # Now let's create a clean dataframe with only the information we need
 # and save it to csv for the next stage of the project
 scrape_df['price'] = scrape_df['price'].astype('float')
