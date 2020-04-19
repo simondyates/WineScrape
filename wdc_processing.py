@@ -47,7 +47,8 @@ scrape_df['liters'] = scrape_df['brackets'].apply(find_quantity)
 # extract the vintage information
 def extract_vintage(s):
     # 4 digits in the name field represent a vintage
-    vint_search = re.search('\d{4}', s)
+    # provided they're the final 4
+    vint_search = re.search('\d{4}$', s)
     if vint_search != None:
         return int(vint_search.group())
     else:
@@ -58,7 +59,7 @@ scrape_df['vintage'] = scrape_df['name'].apply(extract_vintage)
 
 # remove the information we no longer need from the name field
 def shorten_name(s):
-    return re.sub('\d{4}|\(.* ?\)', '', s)
+    return re.sub('\d{4}$|\(.* ?\)', '', s).strip()
 
 scrape_df['name'] = scrape_df['name'].apply(shorten_name)
 
@@ -72,7 +73,8 @@ def extract_rater(s):
     return rater
 
 def extract_rating(s):
-    rating_search = re.search('(\d{2})', s)
+    # ratings are 2 digit or 100
+    rating_search = re.search('(\d{2}\d?)', s)
     if rating_search != None:
         rating = int(rating_search.group(1))
     else:
@@ -85,7 +87,7 @@ scrape_df['rating'] = scrape_df['rating'].apply(extract_rating)
 # Now let's create a clean dataframe with only the information we need
 # and save it to csv for the next stage of the project
 scrape_df['price'] = scrape_df['price'].astype('float')
-scrape_df['price_per_750'] = scrape_df['price'] * scrape_df['liters'] / .75
+scrape_df['price_per_750'] = scrape_df['price'] * (0.75 / scrape_df['liters'])
 scrape_df = scrape_df.rename({'brackets': 'notes'}, axis='columns')
 scrape_df = scrape_df[['name', 'vintage', 'notes', 'liters', 'price_per_750',
                        'rater', 'rating', 'type', 'varietal', 'origin']]
