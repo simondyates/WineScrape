@@ -94,11 +94,11 @@ scrape_df['rater'] = scrape_df['rater'].apply(shorten)
 scrape_df.loc[6496, 'origin'] = 'Barossa Valley, Barossa, South Australia, Australia'
 # and some nulls (which are all gift boxes I want to drop)
 scrape_df = scrape_df[~scrape_df['origin'].isnull()]
-# Now let's create country and subregion fields
+scrape_df.reset_index(inplace=True)
 
 def short_origin(s):
     us = ['California', 'Washington', 'Oregon', 'Other U.S.']
-    s = list(map(str.strip, s.split(',')))
+    s = s.split(', ')
     if s[-1] in us:
         s = s + ['USA']
     if len(s) == 1:
