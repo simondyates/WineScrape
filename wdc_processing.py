@@ -64,25 +64,17 @@ def shorten_name(s):
 scrape_df['name'] = scrape_df['name'].apply(shorten_name)
 
 # parse the rating field
-def extract_rater(s):
-    rater_search = re.search('(\d{2})', s)
-    if rater_search != None:
-        rater = s[: rater_search.start()-1]
-    else:
-        rater = None
-    return rater
-
 def extract_rating(s):
     # ratings are 2 digit or 100
     rating_search = re.search('(\d{2}\d?)', s)
     if rating_search != None:
         rating = int(rating_search.group(1))
+        rater = s[: rating_search.start() - 1]
     else:
-        rating = None
-    return rating
+        rating = rater = None
+    return rating, rater
 
-scrape_df['rater'] = scrape_df['rating'].apply(extract_rater)
-scrape_df['rating'] = scrape_df['rating'].apply(extract_rating)
+scrape_df[['rating', 'rater']] = pd.DataFrame(scrape_df['rating'].apply(extract_rating).to_list())
 
 # Now I want to shorten some of the longer rating names
 short_dict = {'Robert Parker\'s Wine Advocate': 'Robert Parker',
@@ -98,11 +90,28 @@ def shorten(s):
 
 scrape_df['rater'] = scrape_df['rater'].apply(shorten)
 
+# Now let's clean up the origin field.  There's one missing entry I can fix manually
+scrape_df.loc[6496, 'origin'] = 'Barossa Valley, Barossa, South Australia, Australia'
+# and some nulls (which are all gift boxes I want to drop)
+scrape_df = scrape_df[~scrape_df['origin'].isnull()]
+# Now let's create country and subregion fields
+
+def short_origin(s):
+    us = ['California', 'Washington', 'Oregon', 'Other U.S.']
+    s = list(map(str.strip, s.split(',')))
+    if s[-1] in us:
+        s = s + ['USA']
+    if len(s) == 1:
+        return '', s[-1]
+    return s[-2], s[-1]
+
+scrape_df[['subregion', 'country']] = pd.DataFrame(scrape_df['origin'].apply(short_origin).to_list())
+
 # Now let's create a clean dataframe with only the information we need
-# and save it to csv for the next stage of the project
 scrape_df['price'] = scrape_df['price'].astype('float')
 scrape_df['price_per_750'] = scrape_df['price'] * (0.75 / scrape_df['liters'])
 scrape_df = scrape_df.rename({'brackets': 'notes'}, axis='columns')
 scrape_df = scrape_df[['name', 'vintage', 'notes', 'liters', 'price_per_750',
-                       'rater', 'rating', 'type', 'varietal', 'origin']]
+                       'rater', 'rating', 'type', 'varietal', 'country', 'subregion', 'origin']]
+# Done! Ready to save to csv
 scrape_df.to_csv('wdc_cleaned.csv', index=None)
