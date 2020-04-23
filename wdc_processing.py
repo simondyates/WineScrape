@@ -63,6 +63,14 @@ def shorten_name(s):
 
 scrape_df['name'] = scrape_df['name'].apply(shorten_name)
 
+# Now let's add a 'nameyear' column
+def make_nameyear(i):
+    if i == 0:
+        return 'NV'
+    else:
+        return str(i)
+scrape_df['nameyear'] = scrape_df['name'] + ' ' + scrape_df['vintage'].apply(make_nameyear)
+
 # parse the rating field
 def extract_rating(s):
     # ratings are 2 digit or 100
@@ -112,6 +120,6 @@ scrape_df['price'] = scrape_df['price'].astype('float')
 scrape_df['price_per_750'] = scrape_df['price'] * (0.75 / scrape_df['liters'])
 scrape_df = scrape_df.rename({'brackets': 'notes'}, axis='columns')
 scrape_df = scrape_df[['name', 'vintage', 'notes', 'liters', 'price_per_750',
-                       'rater', 'rating', 'type', 'varietal', 'country', 'subregion', 'origin']]
+                       'rater', 'rating', 'type', 'varietal', 'country', 'subregion', 'origin', 'nameyear']]
 # Done! Ready to save to csv
 scrape_df.to_csv('wdc_cleaned.csv', index=None)
