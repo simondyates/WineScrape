@@ -27,17 +27,7 @@ wine = wine.drop(['id', 'duplicate'], axis = 1)
 wine['rating'] = wine['rating'] - wine['rating'].mean()
 wine['price_per_750'] = wine['price_per_750'] - wine['price_per_750'].mean()
 
-# Regress raters against price
-price_corr = np.zeros(len(raters))
-for i in range(len(raters)):
-    X = wine[wine['rater'] == raters[i]]['rating'].to_numpy()
-    Y = wine[wine['rater'] == raters[i]]['price_per_750'].to_numpy()
-    price_corr[i] = X.T @ Y / (lin.norm(X) * lin.norm(Y))
-
-price_corr_s = pd.Series(price_corr, index=raters).sort_values()
-print(price_corr_s)
-
-# Now let's look at correlation between raters
+# First let's look at correlation between raters
 # This is slightly unusual analysis because we can only
 # look at correlation on the subset of wines that they both reviewed
 # so each correlation will be estimated from a different number of samples
@@ -64,6 +54,20 @@ rater_corr_df = pd.DataFrame(rater_corr, index=raters, columns=raters)
 rater_infl_s = pd.Series(rater_infl, index=raters).sort_values(ascending=False)
 print(rater_infl_s)
 print(rater_corr_df)
+rater_corr_df.to_csv('ratercorrels.csv')
+
+# Now, let's regress raters against price
+# I want to winsorize the data first: throw out wines over $500 a bottle
+wine = wine[wine['price_per_750']<=500]
+
+price_corr = np.zeros(len(raters))
+for i in range(len(raters)):
+    X = wine[wine['rater'] == raters[i]]['rating'].to_numpy()
+    Y = wine[wine['rater'] == raters[i]]['price_per_750'].to_numpy()
+    price_corr[i] = X.T @ Y / (lin.norm(X) * lin.norm(Y))
+
+price_corr_s = pd.Series(price_corr, index=raters).sort_values()
+print(price_corr_s)
 
 # Things to write about:
 # wine.com is 72% correlated to price.  They're just trying to sell the expensive wines! Throw them out
