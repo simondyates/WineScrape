@@ -9,3 +9,7 @@ Analysis of the correlation of ratings to price, and between raters is performed
 A simple tool for identifying the best-rated wines for a variety of criteria was created in the Jupyter Notebook WineChooser.ipynb.
 
 The file selenium_scrape.py uses Selenium to scrape the vintage table on robertparker.com.  Selenium is necessary because this site uses Ajax.  This generates output stored in robertparker_raw.csv.  Currently, this data is not used in the project but will be incorporated in subsequent stages.
+
+WineChooser.ipynb is hosted on Binder as a web app.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/simondyates/WineScrape/master?filepath=%2Fvoila%2Frender%2FWineChooser.ipynb)
