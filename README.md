@@ -12,4 +12,4 @@ The file selenium_scrape.py uses Selenium to scrape the vintage table on robertp
 
 WineChooser.ipynb is hosted on Binder as a web app.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/simondyates/WineScrape/master?filepath=%2Fvoila%2Frender%2FWineChooser.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/simondyates/WineScrape/master?urlpath=%2Fvoila%2Frender%2FWineChooser.ipynb)
